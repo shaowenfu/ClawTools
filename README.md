@@ -18,6 +18,19 @@
 - 支持分层检索系统（年→月→日）
 - 与 Sherwen_Life_System 无缝集成
 
+### Smart Log Analyzer (smart_log_analyzer.py)
+- 解析各种日志格式（系统日志、应用日志、Web服务器日志）
+- 内存高效的流式处理，支持大文件
+- 自动日志格式检测和错误模式识别
+- 性能指标提取和结构化 JSON 输出
+
+### Smart Config Manager (smart_config_manager.py)
+- 多格式配置文件管理（JSON、YAML、TOML、INI）
+- 配置验证和类型检查
+- 配置文件合并和覆盖
+- 敏感信息加密/解密
+- 配置版本历史追踪和环境变量集成
+
 ## 🚀 Future Development / 未来开发
 
 - **Notion Sync Tool**: 自动同步 Blinks&Ideas 到本地知识库
