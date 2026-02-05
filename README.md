@@ -31,6 +31,17 @@
 - 敏感信息加密/解密
 - 配置版本历史追踪和环境变量集成
 
+### Memory Optimization System (memory_optimization.sh)
+- 自动分析和优化记忆系统设计
+- 调用多种大模型（Codex/Claude Code/Gemini）获取优化建议
+- 记录优化尝试和效果到专门的日志文件
+- 持续改进记忆检索和存储效率
+
+### Future Ideas Tracker (future_optimization_ideas.md)
+- 记录用户提出的未来优化想法
+- 设置定期提醒确保不会遗忘重要建议
+- 支持优先级排序和实施计划跟踪
+
 ## 🚀 Future Development / 未来开发
 
 - **Notion Sync Tool**: 自动同步 Blinks&Ideas 到本地知识库
