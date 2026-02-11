@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Local secrets/config
+.env
+*.pem
+*.key
+credentials*.json
