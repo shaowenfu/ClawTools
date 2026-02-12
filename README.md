@@ -20,6 +20,10 @@ This repo is intentionally **general-purpose**:
 - **Minimal permissions**: prefer read-only operations; make destructive actions explicit.
 - **Observability by default**: every automation should leave an audit trail.
 
+## Recent Updates (Feb 12)
+- Added logic for **Idempotent Maintenance**: ensuring scripts like `daily_archiver.py` can be safely re-run without duplicate actions.
+- Enhanced **Gateway Resilience**: improved logging for 503/499 status codes in communications adapters.
+
 ## Quick start
 
 ```bash
@@ -40,4 +44,4 @@ python3 system_monitor.py
 - If you contribute: do not add anything that could expose private projects or personal identifiers.
 
 ---
-Last updated: 2026-02-11
+Last updated: 2026-02-12
