@@ -20,6 +20,11 @@ This repo is intentionally **general-purpose**:
 - **Minimal permissions**: prefer read-only operations; make destructive actions explicit.
 - **Observability by default**: every automation should leave an audit trail.
 
+## Recent Updates (Feb 17)
+- **Search Tool**: Added `brave_search.py` - a robust CLI wrapper for Brave Search API with paid/free tier fallback.
+- **Maintenance**: Routine verification of script stability and documentation accuracy.
+- **Dependency Scan**: Validated common library versions for compatibility.
+
 ## Recent Updates (Feb 16)
 - **Maintenance**: Routine verification of script stability and documentation accuracy.
 - **Dependency Scan**: Validated common library versions for compatibility.
