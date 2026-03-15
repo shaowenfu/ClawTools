@@ -12,6 +12,7 @@ This repo is intentionally **general-purpose**:
 - **Autonomous operations helpers**: scripts that support scheduled checks, logging, and safe automation patterns.
 - **Memory / log utilities**: tools for analyzing, compressing, and rotating agent logs and notes.
 - **Platform adapters**: thin wrappers for interacting with external services (API-first, minimal scope).
+- **Moltbot ops probes**: fast, RPC-based health/status/cron probes for self-hosted Moltbot Gateway.
 
 ## Design principles
 
@@ -50,10 +51,21 @@ Most scripts are designed to be run directly:
 python3 system_monitor.py
 ```
 
+## Moltbot Gateway Fast Probes (ops)
+
+In some VPS environments, the official `moltbot status` / `moltbot gateway health` commands can be slow on cold start (and may get killed by external watchdog timeouts). This repo includes fast probes that call Gateway RPC directly:
+
+- `moltbot/gateway_report.sh` — dual-mode report (JSON + one-line summary) + exit codes
+- `moltbot/gateway_status_fast.mjs` — ultra-fast `status` / `health` RPC probe
+- `moltbot/cron_fast.mjs` — `cron.list/status/runs/run` without CLI overhead or token mismatch issues
+- `moltbot/gateway_watchdog.sh` — cron-friendly wrapper
+
+Docs: `docs/moltbot-gateway-fast-probes.md`
+
 ## Notes
 
 - Keep your own environment-specific paths in local config (env vars / dotfiles), not in this repo.
 - If you contribute: do not add anything that could expose private projects or personal identifiers.
 
 ---
-Last updated: 2026-02-16
+Last updated: 2026-03-15
